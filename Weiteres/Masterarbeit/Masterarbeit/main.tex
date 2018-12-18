@@ -1,0 +1,99 @@
+\documentclass[
+    12pt, % Schriftgröße
+    DIV=10,
+    a4paper, % Papierformat
+    oneside, % einseitiges Dokument
+    titlepage, % es wird eine Titelseite verwendet
+    parskip=half, % Abstand zwischen Absätzen (halbe Zeile)
+    headings=normal, % Größe der Überschriften verkleinern
+    listof=totoc, % Verzeichnisse im Inhaltsverzeichnis aufführen
+    bibliography=totoc, % Literaturverzeichnis im Inhaltsverzeichnis aufführen
+    captions=tableheading, % Beschriftung von Tabellen unterhalb ausgeben
+    numbers=noendperiod 	% kein Punkt nach Nummerierung in Überschrift
+]{scrreprt}
+
+\include{config}
+
+\newcommand{\titel}{Konzeption und Implementierung einer Android Applikation zur Raumbuchung via Conversational User Interface}
+\newcommand{\art}{Masterarbeit}
+\newcommand{\fachgebiet}{Software-Engineering}
+\newcommand{\autor}{Michael Wagner}
+\newcommand{\fakultaet}{Elektrotechnik Feinwerktechnik Informationstechnik}
+\newcommand{\studienbereich}{Elektronische und Mechatronische Systeme}
+\newcommand{\vertiefung}{Informationstechnik}
+\newcommand{\matrikelnr}{2560795}
+\newcommand{\erstgutachter}{Prof. Dr. Oliver Hofmann}
+\newcommand{\zweitgutachter}{Prof. Dr. Hans-Georg Hopf}
+\newcommand{\betreuer}{Dipl.-Inf. Steffen Blümm}
+\newcommand{\jahr}{2018}
+\newcommand{\ort}{Nürnberg}
+\newcommand{\logo}{bilder/LogoOhmHochschule.jpg}
+\newcommand{\hs}{Technische Hochschule Nürnberg Georg Simon Ohm}
+\newcommand{\adorsys}{adorsys GmbH \& Co. KG}
+
+\begin{document}
+
+% auch subsubsection nummerieren
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Deckblatt und Abstract ohne Seitenzahl
+\ofoot{}
+
+% added by mwa
+% first page - clear page
+\clearpage
+\thispagestyle{empty}
+\hfill
+\clearpage
+
+\include{nebenkapitel/Deckblatt}
+\include{nebenkapitel/Abstract}
+\ofoot{\pagemark}
+
+\pagenumbering{Roman}
+\tableofcontents            % Inhaltsverzeichnis
+
+\input{nebenkapitel/Abkuerzungen}      % Abkürzungsverzeichnis
+%\clearpage\markboth{\nomname}{\nomname} % für korrekte Überschrift in der Kopfzeile
+%\printnomenclature
+
+\listoffigures              % Abbildungsverzeichnis
+\listoftables               % Tabellenverzeichnis
+
+\renewcommand{\lstlistlistingname}{Quellcodeverzeichnis}
+\lstlistoflistings          % Quellcodeverzeichnis
+
+\clearpage
+\pagenumbering{arabic}
+
+\include{hauptkapitel/1_Einleitung}
+\include{hauptkapitel/2_Grundlagen}
+\include{hauptkapitel/3_Konzeption}
+\include{hauptkapitel/4_Implementierung}
+\include{hauptkapitel/5_Schlussbetrachtung}
+
+% alle Glossareinträge werde automatisch angezeigt (auch wenn sie nicht verwendet werden) -> dadurch müssen sie nicht expliztit mit \gls{} aufgerufen werden
+%\csappto{theglossary}{\label{cha:glossar}}
+%\printglossaries    
+
+\small
+%\bibliographystyle{literatur/IEEEtran} standard
+\bibliographystyle{literatur/alpha} % added by mwa
+\bibliography{literatur/Bibliographie}
+
+\normalsize
+
+%\include{nebenkapitel/Erklaerung}
+
+\begin{appendix}
+    \clearpage
+    \pagenumbering{roman}
+    \chapter{Anhang}
+    \label{sec:Anhang}
+    % Rand der Aufzählungen in Tabellen anpassen
+    \setdefaultleftmargin{1em}{}{}{}{}{}
+    \input{nebenkapitel/Anhang}
+\end{appendix}
+
+\end{document}

@@ -1,0 +1,60 @@
+{
+  "id": "3c9fe52e-3c6c-421b-a823-ec2b7c73ee42",
+  "name": "RoomEntity",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "R1",
+      "synonyms": [
+        "R1",
+        "Raum R1"
+      ]
+    },
+    {
+      "value": "R2",
+      "synonyms": [
+        "R2",
+        "blue room",
+        "blueroom",
+        "Raum R2"
+      ]
+    },
+    {
+      "value": "R6",
+      "synonyms": [
+        "R6",
+        "dark room",
+        "darkroom",
+        "Raum R6"
+      ]
+    },
+    {
+      "value": "R4",
+      "synonyms": [
+        "R4",
+        "design thinking room",
+        "Raum R4"
+      ]
+    },
+    {
+      "value": "R3",
+      "synonyms": [
+        "R3",
+        "Raum R3"
+      ]
+    },
+    {
+      "value": "RX",
+      "synonyms": [
+        "Raum egal",
+        "egal",
+        "alle Räume",
+        "jeder",
+        "RX",
+        "alle"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

@@ -1,0 +1,321 @@
+{
+  "id": "213f3404-e159-44c8-adfa-cb9108b94d5c",
+  "name": "BucheRaumIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "e6cf17c3-6c31-45a5-bd97-3f89b7124571",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "prompts": [
+            "Für welchen Tag möchtest du den Raum buchen?"
+          ],
+          "isList": false
+        },
+        {
+          "id": "a83cf2b6-557b-4189-8568-30ba7618f6db",
+          "required": true,
+          "dataType": "@sys.time",
+          "name": "starttime",
+          "value": "$starttime",
+          "prompts": [
+            "Um wieviel Uhr benötigst du den Raum?"
+          ],
+          "isList": false
+        },
+        {
+          "id": "73700033-62b5-44af-86d3-ff021415f0dc",
+          "required": true,
+          "dataType": "@RoomEntity",
+          "name": "room",
+          "value": "$room",
+          "prompts": [
+            "Welchen Raum möchtest du buchen?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1537530164,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "6d14429b-cfeb-41ba-81f3-185a9a60294c",
+      "data": [
+        {
+          "text": "Bitte buche mir einen Raum für "
+        },
+        {
+          "text": "morgen",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529588180,
+      "isAuto": false
+    },
+    {
+      "id": "9ad77154-2b3e-46c7-8712-1abcf83c7383",
+      "data": [
+        {
+          "text": "Ich brauche "
+        },
+        {
+          "text": "morgen",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " einen Raum"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529588180,
+      "isAuto": false
+    },
+    {
+      "id": "3a2dc82e-67ea-40aa-a0be-0b463d70f9e5",
+      "data": [
+        {
+          "text": "Ich möchte bitte "
+        },
+        {
+          "text": "Raum R2",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "morgen",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "um 03:00 Uhr",
+          "alias": "starttime",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "für eine Stunde",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "buchen",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1536914411,
+      "isAuto": false
+    },
+    {
+      "id": "4780725d-c82b-41f2-8b4d-27c5778e9e43",
+      "data": [
+        {
+          "text": "Ich habe am "
+        },
+        {
+          "text": "Donnerstag",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "ein",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " Meeting"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529588180,
+      "isAuto": false
+    },
+    {
+      "id": "697ef65b-194a-4dad-b59b-e097fb406b2e",
+      "data": [
+        {
+          "text": "Mein Termin "
+        },
+        {
+          "text": "heute",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " dauert "
+        },
+        {
+          "text": "3 Stunden",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537432548,
+      "isAuto": false
+    },
+    {
+      "id": "5e0080fa-8131-49d8-a36f-14ad88359382",
+      "data": [
+        {
+          "text": "Ich möchte "
+        },
+        {
+          "text": "morgen",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " um "
+        },
+        {
+          "text": "14:00",
+          "alias": "starttime",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " für "
+        },
+        {
+          "text": "2 Stunden",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " den Raum "
+        },
+        {
+          "text": "R2",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "buchen",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537432548,
+      "isAuto": false
+    },
+    {
+      "id": "494d5e0d-e26a-4022-94ca-6ff9b326bc4d",
+      "data": [
+        {
+          "text": "Ich habe einen Termin um "
+        },
+        {
+          "text": "halb 5",
+          "alias": "starttime",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536914411,
+      "isAuto": false
+    },
+    {
+      "id": "48c5305c-66df-4fd6-89ed-00b8c1425169",
+      "data": [
+        {
+          "text": "Ich brauche am "
+        },
+        {
+          "text": "Freitag",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " einen Raum"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529588180,
+      "isAuto": false
+    },
+    {
+      "id": "b52b67b1-ebce-4849-a71d-b875ff6c6f8a",
+      "data": [
+        {
+          "text": "Buche Raum"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529588180,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

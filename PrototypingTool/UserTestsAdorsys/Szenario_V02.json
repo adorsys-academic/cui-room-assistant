@@ -1,0 +1,392 @@
+{
+    "version": "0.1",
+    "creator": "cui-prt",
+    "format": "cpd-prt",
+    "projectName": "User Tests at adorsys - Szenario V01",
+    "persona": "NA",
+    "modality": "multi",
+    "languageCode": "de",
+    "scenarios": [{
+        "name": "SzenarioV01",
+        "intents": [{
+                "name": "helpIntent",
+                "utterances": [
+                    "Hilfe",
+                    "Hilf mir",
+                    "Was kann ich fragen",
+                    "Ich bin verwirrt",
+                    "Ich weiß nicht weiter"
+                ],
+                "responses": [{
+                    "subject": "Help",
+                    "phrase": "Ich bin dein persönlicher Raumbuchungs-Assistent. Ich helfe dir gerne dabei, einen Besprechungsraum für deine Termine zu finden und zu buchen.",
+                    "type": "textmessage"
+                }]
+            },
+            {
+                "name": "errorIntent",
+                "utterances": [
+                    "Hilfe",
+                    "Hilf mir",
+                    "Was kann ich fragen",
+                    "Ich bin verwirrt",
+                    "Ich weiß nicht weiter"
+                ],
+                "responses": [{
+                    "subject": "Error",
+                    "phrase": "Entschuldigung, das muss ich noch lernen.",
+                    "type": "textmessage"
+                }]
+            },
+            {
+                "name": "AdditionalPhrases",
+                "priority": {
+                    "aux": 0
+                },
+                "utterances": [
+                    "Einige zusätzliche und hilfreiche Phrases"
+                ],
+                "responses": [{
+                    "subject": "askForBooking",
+                    "phrase": "<TESTERNAME:40> Wann möchtest du den Raum buchen?",
+                    "type": "textmessage"
+                  },
+                  {
+                    "subject": "askForBookingDay",
+                    "phrase": "An welchem Tag möchtest du den Raum buchen?",
+                    "type": "textmessage"
+                  },
+                  {
+                    "subject": "askForBookingTime",
+                    "phrase": "<TESTERNAME:40> Zu welcher Uhrzeit möchtest du den Raum buchen?",
+                    "type": "textmessage"
+                  }
+                ]
+            },
+            {
+                "name": "RoomsTuesdayMorning",
+                "priority": {
+                    "main": 0
+                },
+                "utterances": [
+                    "Welche Räume sind Dienstag vormittag frei?",
+                    "Welche Räume Dienstag ab 9:30 frei?"
+                ],
+                "responses": [{
+                        "subject": "CalendarViewFreeSlots",
+                        "phrase": "Hier einige freie Räume für Dienstag, den 16.10.2018",
+                        "hint": "Wähle einen Zeitraum, um mit dem Buchen fortzufahren.",
+                        "type": "calendar",
+                        "tags": [
+                            "columns"
+                        ],
+                        "followUp": {
+                            "command": "discard"
+                        },
+                        "payload": [{
+                            "layout": "long",
+                            "startingHour": 8,
+                            "slots": [{
+                                    "start": 9.0,
+                                    "duration": 5.0,
+                                    "col": 0,
+                                    "typeOfTitle": "room",
+                                    "room": "R1",
+                                    "dateRelative": "Dienstag",
+                                    "dateAbsolute": "16.10.2018",
+                                    "dayOfWeek": "Di"
+                                },
+                                {
+                                    "start": 15.5,
+                                    "duration": 4.5,
+                                    "col": 0,
+                                    "typeOfTitle": "room",
+                                    "room": "R1",
+                                    "dateRelative": "Dienstag",
+                                    "dateAbsolute": "16.10.2018",
+                                    "dayOfWeek": "Di"
+                                },
+                                {
+                                    "start": 9.5,
+                                    "duration": 3.5,
+                                    "col": 1,
+                                    "typeOfTitle": "room",
+                                    "room": "R2",
+                                    "dateRelative": "Dienstag",
+                                    "dateAbsolute": "16.10.2018",
+                                    "dayOfWeek": "Di"
+                                },
+                                {
+                                    "start": 15.0,
+                                    "duration": 1.0,
+                                    "col": 1,
+                                    "typeOfTitle": "room",
+                                    "room": "R2",
+                                    "dateRelative": "Dienstag",
+                                    "dateAbsolute": "16.10.2018",
+                                    "dayOfWeek": "Di"
+                                },
+                                {
+                                    "start": 9.0,
+                                    "duration": 6.5,
+                                    "col": 2,
+                                    "typeOfTitle": "room",
+                                    "room": "R4",
+                                    "dateRelative": "Dienstag",
+                                    "dateAbsolute": "16.10.2018",
+                                    "dayOfWeek": "Di"
+                                },
+                                {
+                                    "start": 17.0,
+                                    "duration": 3.0,
+                                    "col": 2,
+                                    "typeOfTitle": "room",
+                                    "room": "R4",
+                                    "dateRelative": "Dienstag",
+                                    "dateAbsolute": "16.10.2018",
+                                    "dayOfWeek": "Di"
+                                }
+                            ]
+                        }]
+                    },
+                    {
+                        "subject": "SliderStartDuration",
+                        "phrase": "<TESTERNAME:40> Ab wann und für wie lange möchtest Du \nden Raum R1 reservieren?",
+                        "type": "regulator",
+                        "tags": [
+                            "time",
+                            "start",
+                            "duration"
+                        ],
+                        "followUp": {
+                            "command": "discard"
+                        },
+                        "payload": {
+                            "start": 9.0,
+                            "duration": 5.0,
+                            "col": 0,
+                            "typeOfTitle": "room",
+                            "room": "R1",
+                            "dateRelative": "Dienstag",
+                            "dateAbsolute": "16.10.2018",
+                            "dayOfWeek": "Di"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "TuesdayAt0930Intent",
+                "priority": {
+                    "main": 0
+                },
+                "utterances": [
+                    "Welche Räume sind am Dienstag um 9:30 Uhr frei",
+                    "Ich möchte am Dienstag um 9:30 Uhr einen Raum buchen."
+                ],
+                "responses": [{
+                        "subject": "SliderDuration",
+                        "phrase": "<TESTERNAME:40> Wie lange soll der Termin gehen?",
+                        "type": "regulator",
+                        "tags": [
+                            "time",
+                            "duration"
+                        ],
+                        "followUp": {
+                            "command": "discard"
+                        },
+                        "payload": [{
+                                "start": 9.5,
+                                "duration": 4.5,
+                                "room": "R1",
+                                "dateRelative": "Dienstag",
+                                "dateAbsolute": "16.10.2018",
+                                "dayOfWeek": "Di"
+                            },
+                            {
+                                "start": 9.5,
+                                "duration": 3.5,
+                                "room": "R2",
+                                "dateRelative": "Dienstag",
+                                "dateAbsolute": "16.10.2018",
+                                "dayOfWeek": "Di"
+                            },
+                            {
+                                "start": 9.5,
+                                "duration": 6.0,
+                                "room": "R4",
+                                "dateRelative": "Dienstag",
+                                "dateAbsolute": "16.10.2018",
+                                "dayOfWeek": "Di"
+                            }
+                        ]
+                    },
+                    {
+                        "subject": "CollectionViewFreeRooms",
+                        "phrase": "<TESTERNAME:40> Hier einige Räume für Dienstag im \nZeitraum zwischen 9:30 Uhr und 13 Uhr.",
+                        "hint": "Wähle einen Raum, um mit dem Buchen fortzufahren.",
+                        "type": "collection",
+                        "tags": [
+                            "rooms"
+                        ],
+                        "followUp": {
+                            "command": "discard"
+                        },
+                        "payload": [{
+                                "start": 9.5,
+                                "duration": 3.5,
+                                "room": "R1",
+                                "dateRelative": "Dienstag",
+                                "dateAbsolute": "16.10.2018",
+                                "dayOfWeek": "Di"
+                            },
+                            {
+                                "start": 9.5,
+                                "duration": 3.5,
+                                "room": "R2",
+                                "dateRelative": "Dienstag",
+                                "dateAbsolute": "16.10.2018",
+                                "dayOfWeek": "Di"
+                            },
+                            {
+                                "start": 9.5,
+                                "duration": 3.5,
+                                "room": "R4",
+                                "dateRelative": "Dienstag",
+                                "dateAbsolute": "16.10.2018",
+                                "dayOfWeek": "Di"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "From0930to1300Intent",
+                "priority": {
+                    "main": 0
+                },
+                "utterances": [
+                    "Welche Räume sind am Dienstag von 9:30 Uhr bis 13:00 Uhr frei?",
+                    "Ich möchte am Dienstag einen Raum von 9:30 Uhr bis 13:00 Uhr buchen."
+                ],
+                "responses": [{
+                    "subject": "CollectionViewFreeRooms",
+                    "phrase": "<TESTERNAME:40> Hier einige Räume für Dienstag im \nZeitraum zwischen 9:30 Uhr und 13 Uhr.",
+                    "hint": "Wähle einen Raum, um mit dem Buchen fortzufahren.",
+                    "type": "collection",
+                    "tags": [
+                        "rooms"
+                    ],
+                    "followUp": {
+                        "command": "discard"
+                    },
+                    "payload": [{
+                            "start": 9.5,
+                            "duration": 3.5,
+                            "room": "R1",
+                            "dateRelative": "Dienstag",
+                            "dateAbsolute": "16.10.2018",
+                            "dayOfWeek": "Di"
+                        },
+                        {
+                            "start": 9.5,
+                            "duration": 3.5,
+                            "room": "R2",
+                            "dateRelative": "Dienstag",
+                            "dateAbsolute": "16.10.2018",
+                            "dayOfWeek": "Di"
+                        },
+                        {
+                            "start": 9.5,
+                            "duration": 3.5,
+                            "room": "R4",
+                            "dateRelative": "Dienstag",
+                            "dateAbsolute": "16.10.2018",
+                            "dayOfWeek": "Di"
+                        }
+                    ]
+                }]
+            },
+            {
+                "name": "CompleteBookingIntent",
+                "priority": {
+                    "main": 0
+                },
+                "utterances": [
+                    "Nutzer hat alle Angaben abgeschlossen",
+                    "Ggf. Hinzufügen von Title und Abschluss der Buchung"
+                ],
+                "responses": [{
+                        "subject": "AddTitle",
+                        "phrase": "<TESTERNAME:40> Welchen Titel soll deine Besprechung haben?",
+                        "type": "textmessage"
+                    },
+                    {
+                        "subject": "ConfirmBookingRequest",
+                        "phrase": "<TESTERNAME:40> Soll ich für Dienstag 16.10.18 \nden Raum R1 von 9:30 Uhr bis 13:00 Uhr für Dich buchen?",
+                        "type": "confirmation",
+                        "tags": [
+                            "booking"
+                        ],
+                        "payload": [{
+                            "start": 9.5,
+                            "duration": 3.5,
+                            "col": 0,
+                            "title": "Projektanbahnung VR Bank",
+                            "typeOfTitle": "room",
+                            "room": "R1",
+                            "dateRelative": "Dienstag",
+                            "dateAbsolute": "16.10.2018",
+                            "dayOfWeek": "Di"
+                        }]
+                    },
+                    {
+                        "subject": "CancelBooking",
+                        "phrase": "<TESTERNAME:40> Ich habe deine Buchung verworfen. Wie kann ich dir sonst noch helfen?",
+                        "type": "textmessage"
+                    },
+                    {
+                        "subject": "bookingSuccessFull",
+                        "phrase": "<TESTERNAME:40> Ich habe den Raum R1 für Dich gebucht. \nHier, Deine Bestätigung",
+                        "type": "textmessage"
+                    },
+                    {
+                        "subject": "ShowCertificate",
+                        "phrase": "Zeige Buchungsbestätigung",
+                        "type": "certificate",
+                        "tags": [
+                            "booking"
+                        ],
+                        "payload": [{
+                            "start": 9.5,
+                            "duration": 3.5,
+                            "col": 0,
+                            "title": "Projektanbahnung VR Bank",
+                            "typeOfTitle": "room",
+                            "room": "R1",
+                            "dateRelative": "Dienstag",
+                            "dateAbsolute": "16.10.2018",
+                            "dayOfWeek": "Di"
+                        }]
+                    },
+                    {
+                        "subject": "ShowRoomOnMap",
+                        "phrase": "<TESTERNAME:40> Hier, der Lageplan der Besprechungsräume.",
+                        "hint": "Ich habe für Dich den Raum R1 farbig markiert",
+                        "type": "map",
+                        "tags": [
+                            "rooms"
+                        ],
+                        "payload": [
+                            "R1"
+                        ]
+                    },
+                    {
+                        "subject": "PleasureMessage",
+                        "phrase": "<TESTERNAME:40> Das habe ich gerne für dich gemacht.",
+                        "type": "textmessage"
+                    }
+                ]
+            }
+        ]
+    }]
+}

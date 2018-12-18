@@ -1,0 +1,454 @@
+{
+  "id": "4ee013a2-7647-4152-9555-519b6c0de9d1",
+  "name": "RaumVerfuegbarIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "eed888da-ac9c-4daa-aba4-fa39790c129d",
+          "required": false,
+          "dataType": "@RoomEntity",
+          "name": "room",
+          "value": "$room",
+          "prompts": [],
+          "defaultValue": "RX",
+          "isList": false
+        },
+        {
+          "id": "1897633f-1279-44dc-86cd-86b8b23f4107",
+          "required": false,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "prompts": [],
+          "defaultValue": "",
+          "isList": false
+        },
+        {
+          "id": "e2cd1b3c-b408-4ff6-abac-4324f24527fa",
+          "required": false,
+          "dataType": "@sys.time",
+          "name": "starttime",
+          "value": "$starttime",
+          "prompts": [],
+          "defaultValue": "",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1537530460,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "d9476850-cc14-4a18-9329-9f71bcc78f8f",
+      "data": [
+        {
+          "text": "Status "
+        },
+        {
+          "text": "R1",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1535098484,
+      "isAuto": false
+    },
+    {
+      "id": "f7b62680-b2c8-4246-87d7-4aca3620f612",
+      "data": [
+        {
+          "text": "Welcher Raum ist frei"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1535105180,
+      "isAuto": false
+    },
+    {
+      "id": "356fd665-d7e1-4c1d-a8e3-a5ec84b41be2",
+      "data": [
+        {
+          "text": "Welche Räume sind "
+        },
+        {
+          "text": "jetzt",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " sofort verfügbar"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1535105180,
+      "isAuto": false
+    },
+    {
+      "id": "aeaa7adc-a31e-47aa-9e9c-3f424002ca3f",
+      "data": [
+        {
+          "text": "Ist "
+        },
+        {
+          "text": "R1",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        },
+        {
+          "text": " frei"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1535105180,
+      "isAuto": false
+    },
+    {
+      "id": "0afd9e9e-e455-4eab-a421-54ce6a94bdda",
+      "data": [
+        {
+          "text": "Status "
+        },
+        {
+          "text": "R6",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1535098484,
+      "isAuto": false
+    },
+    {
+      "id": "2e7e7262-4b1b-440a-ad59-34ce960e6b9e",
+      "data": [
+        {
+          "text": "Ist "
+        },
+        {
+          "text": "R3",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "gerade",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " belegt"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1535098484,
+      "isAuto": false
+    },
+    {
+      "id": "0df3ef96-56bc-44ab-ae00-a131ca6b3475",
+      "data": [
+        {
+          "text": "Zeige mir "
+        },
+        {
+          "text": "alle",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " freien Räume"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1535105180,
+      "isAuto": false
+    },
+    {
+      "id": "796a96b6-bd31-45d1-9b96-7d5aa2b669ee",
+      "data": [
+        {
+          "text": "Kann ich den "
+        },
+        {
+          "text": "Raum R2",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "jetzt",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " nutzen"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1535098484,
+      "isAuto": false
+    },
+    {
+      "id": "ef0a8af7-6e87-4a62-af4c-459680acbaff",
+      "data": [
+        {
+          "text": "Freie Räume sofort"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1535105180,
+      "isAuto": false
+    },
+    {
+      "id": "2a41a40c-e319-4dc5-9686-e6bb4d03ce27",
+      "data": [
+        {
+          "text": "Raum verfügbar"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1535105180,
+      "isAuto": false
+    },
+    {
+      "id": "d1c86c1f-78eb-4742-8f88-65574bc20370",
+      "data": [
+        {
+          "text": "Ist "
+        },
+        {
+          "text": "R2",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        },
+        {
+          "text": " frei"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1535098484,
+      "isAuto": false
+    },
+    {
+      "id": "481f3d99-d2c2-43f3-a1d7-66af323f3b9f",
+      "data": [
+        {
+          "text": "Frei Räume "
+        },
+        {
+          "text": "morgen",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "15:00 Uhr",
+          "alias": "starttime",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536925777,
+      "isAuto": false
+    },
+    {
+      "id": "525c5e3b-e3bf-4931-a053-20c78ca421d9",
+      "data": [
+        {
+          "text": "Welche Räume sind "
+        },
+        {
+          "text": "gerade",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " frei"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1535105180,
+      "isAuto": false
+    },
+    {
+      "id": "483b8343-4894-445e-aa4d-853b6bff1182",
+      "data": [
+        {
+          "text": "Freie Räume"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1535105180,
+      "isAuto": false
+    },
+    {
+      "id": "c29a364a-02fe-4dc0-b742-4585f9f37157",
+      "data": [
+        {
+          "text": "Kann ich sofort in den "
+        },
+        {
+          "text": "Raum R4",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1535098484,
+      "isAuto": false
+    },
+    {
+      "id": "e1823fd9-69cc-4a64-a047-a5a3f62e8e64",
+      "data": [
+        {
+          "text": "freie räume "
+        },
+        {
+          "text": "um 16 uhr",
+          "alias": "starttime",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537527437,
+      "isAuto": false
+    },
+    {
+      "id": "215e2a3e-10c2-4277-858b-bc2f32d8643e",
+      "data": [
+        {
+          "text": "Ist der "
+        },
+        {
+          "text": "Raum R1",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "gerade",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " frei"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1535098484,
+      "isAuto": false
+    },
+    {
+      "id": "78847ef8-58f6-47a1-ba25-514a158c0c33",
+      "data": [
+        {
+          "text": "Ist "
+        },
+        {
+          "text": "R4",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        },
+        {
+          "text": " verfügbar"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1535098484,
+      "isAuto": false
+    },
+    {
+      "id": "eeb43781-4012-4244-a78f-d4c647e8d1f7",
+      "data": [
+        {
+          "text": "Ist der "
+        },
+        {
+          "text": "Raum R1",
+          "alias": "room",
+          "meta": "@RoomEntity",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "jetzt",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " frei"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1535098484,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

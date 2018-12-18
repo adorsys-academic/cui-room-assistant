@@ -1,0 +1,71 @@
+\chapter{Einleitung}
+\label{cha:einleitung}
+
+Dieses Kapitel spiegelt im Wesentlichen die Inhalte des im Vorfeld der Arbeit entstandenen Exposees wider. Wird bei bestimmten Begriffen, die sich auf Personengruppen beziehen, nur die männliche Form gewählt, so ist dies nicht geschlechtsspezifisch gemeint, sondern geschah ausschließlich aus Gründen der besseren Lesbarkeit. 
+
+\section{Ausgangssituation}
+\label{sec:ausgangssituation}
+
+Bei der Verwendung eines \acp{CUI} bedient der Nutzer ein System durch schriftliche und mündliche Konversation \cite[S. 11]{mctear_conversational_2016}. Dabei beschreiben \acp{CUI} die Sprachverarbeitung und Kommunikation als Schnittstelle, unabhängig davon in welcher Modalität diese vorliegt. Es kann sich deshalb also sowohl um geschriebene als auch um gesprochene Sprache handeln. 
+
+Eine wesentliche Herausforderung dabei ist es, den Nutzungskontext zu erschließen, diesen richtig zu interpretieren und eine passende Antwort zu geben. Die Textversionen der \acp{CUI} werden meist als Chatbots bezeichnet \cite[S. 1]{khan_build_2018}. Diese interaktiven Systeme mit teilweise künstlicher Intelligenz (\acs{KI}) bieten Funktionen an, welche unseren Alltag erleichtern sollen. Während also über ein \ac{GUI} die Antwort auf eine Frage gesucht werden muss, kann diese über ein \acl{CUI} einfach gestellt und direkt erfragt werden.
+
+Mit diesem Hintergrund soll in dieser Masterarbeit die Möglichkeit einer Raumbuchung via \acl{CUI} umgesetzt werden. Heutzutage werden Raumreservierungen in nahezu allen Unternehmen mit Hilfe von Softwaresystemen wie Microsoft Outlook oder IBM Notes getätigt  \cite{foitzik_wie_2017}. Dabei lässt sich über ein \ac{GUI} zumeist eine Kalenderanwendung öffnen. Über diese kann dann nach verfügbaren Räumen gesucht, Einladungen verschickt oder die freien Zeiten der Teilnehmer geprüft werden.
+
+\section{Ziel der Arbeit}
+\label{sec:ziel-der-arbeit}
+
+Das Ziel dieser Arbeit besteht darin, eine Android Applikation zur Raumreservierung via \acl{CUI} zu entwerfen. Dem Nutzer soll es möglich sein, einen Besprechungsraum mittels eines Chatbots zu reservieren. 
+
+Das \ac{CUI} wird dabei durch Visualisierungen erweitert. So können \ac{GUI}-Elemente beispielsweise in Form von Buttons oder Slidern in die Konversation einfließen und diese erweitern. Der Nutzer soll dabei jederzeit die Möglichkeit haben, auch textuelle Nachrichten an den Chatbot zu senden. Im Gegensatz zur Bedienung einer rein grafischen Benutzeroberfläche sparen die Nutzer dabei Zeit \cite{weddehage_10_2016}, da das Suchen nach einem verfügbaren Raum vereinfacht wird. Anhand eines Prototypen kann dabei überprüft werden, wie schnell und effektiv eine Raumbuchung via \ac{CUI} stattfinden kann.
+
+\section{Aufbau der Arbeit}
+\label{sec:aufbau-der-arbeit}
+
+Um dieses Ziel zu erreichen, wird die Vorgehensweise anhand der nachfolgenden Schritte genauer erläutert. Die grundsätzliche Anforderung dieser Arbeit ist bereits durch das Ziel beschrieben. Es geht prinzipiell darum ein Konzept zu erarbeiten, die Kommunikation zwischen den Komponenten zu klären und Nutzungskonzepte zu evaluieren. 
+
+Durch das konkrete Thema sind bereits viele der Softwarekomponenten klar beschrieben. So wird es sich beispielsweise in jedem Fall um eine Android Applikation handeln. Da die \adorsys\ den Google-Kalender nutzt, würde sich hier die Verwendung des Chatbot-Builders Dialogflow anbieten. Zudem müssen Überlegungen hinsichtlich des Aufbaus der Konversationsstruktur und der Konversationsstrategie des Chatbots angestellt und evaluiert werden. Sämtliche Ergebnisse werden in dieser Arbeit zusammengefasst und bewertet.
+
+\section{Projektträger}
+\label{sec:projekttraeger}
+
+Diese Masterarbeit wurde in Zusammenarbeit mit dem Unternehmen \adorsys\ durchgeführt. Um deren fachliche Kompetenzen und die Hintergründe, die zu dieser Arbeit geführt haben, besser einordnen zu können, wird das Unternehmen im Folgenden kurz vorgestellt.
+
+Die \adorsys \, ist ein im Jahre 2006 in Nürnberg gegründetes, mittelständisches IT-Unternehmen. Es wird aktuell von dem Geschäftsgründer Francis Pouatcha Nouyeuwe und Stefan Hamm geleitet und beschäftigt derzeit 112 Mitarbeiter\footnote{Stand: 15. November 2018}  an den Standorten Nürnberg und Frankfurt am Main.
+
+Fachlich hat sich die \adorsys \, auf individuelle Softwarelösungen für Kunden aus der Banken"~ und Versicherungsbranche spezialisiert. Mit dem Motto „Wir entwickeln Software für eine digitale Zukunft“ begleiten die eingesetzten Projektteams die Kunden von der ersten Idee bis hin zum fertigen Produkt. Dabei ist es unabhängig davon, ob eine bestehende Software modernisiert werden soll oder die Lösung zu einem neuen Geschäftsmodell fehlt. 
+
+Selbst beschreibt sich das Unternehmen wie folgt:
+\begin{quote}
+    „Die adorsys ist ein seit 2006 bestehendes innovatives IT-Unternehmen für zielgenaue, individuelle und exklusive IT-Lösungen. Wir decken eine Vielzahl fachlicher und technologischer Themen ab und bieten die komplette Projektrealisierung aus einer Hand. Von Projektmanagement, Businessanalyse und Anforderungsentwicklung, Softwarearchitektur und -entwicklung über Development Services bis zur Betriebsvorbereitung.“ \cite{adorsys_gmbh_&_co._kg_company_2018}
+\end{quote}
+
+Das Unternehmen beschäftigt sich seit dem Aufkommen der neuen Generation von Sprachassistenten und Chatbots mit dem Thema Conversational User Interfaces. Im Rahmen von wissenschaftlichen Arbeiten werden derzeit Kompetenzen in diesem Bereich aufgebaut.
+In Abbildung \ref{fig:logo-adorsys} ist das aktuelle Firmenlogo der \adorsys \, dargestellt.
+\newline
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.6\textwidth]{bilder/logo.png}
+    \caption{Logo der \adorsys \, \cite{adorsys_gmbh_&_co._kg_company_2018}}
+    \label{fig:logo-adorsys}
+\end{figure}
+
+\section{Aufbau des Dokuments}
+\label{sec:aufbau-des-dokuments}
+
+Zur besseren Übersicht und Orientierung soll hier ein Überblick über die nachfolgenden Kapitel und deren Inhalte gegeben werden. 
+
+\begin{enumerate}
+  \item In der \nameref{cha:einleitung} wird in die Thematik eingeführt sowie auf die Ziele und den Aufbau der Arbeit eingegangen. Des Weiteren wird der Projektträger  \adorsys \ kurz vorgestellt. 
+  
+  \item Im Kapitel \nameref{cha:grundlagen} werden einige für die Masterarbeit notwendigen Begrifflichkeiten, Technologien und Funktionsweisen beschrieben. Dabei wird verstärkt auf Conversational User Interfaces und Android Applikationen eingegangen. 
+  
+  \item Das Kapitel \nameref{cha:konzeption} befasst sich mit dem Requirements Engineering und der prototypischen Umsetzung des Systems. Dabei werden Nutzeranforderungen im Kontext des Usability Engineering analysiert und bewertet. 
+  
+  \item Im Kapitel \nameref{cha:implementierung} werden die für die Umsetzung benötigten Komponenten ausgewählt, deren Kommunikation und Schnittstellen geklärt sowie einige Anmerkungen zur Implementierung gegeben.
+  
+  \item In der \nameref{cha:schlussbetrachtung} werden die Ergebnisse der Arbeit in Form eines Fazits und Ausblicks zusammengefasst.
+  
+  \item Im \nameref{sec:Anhang} sind alle Ausarbeitungen in vollständiger Form dargestellt. Zusätzlich ist die Struktur der beiliegenden CD beschrieben.
+\end{enumerate}

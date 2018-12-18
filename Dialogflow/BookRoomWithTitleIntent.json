@@ -1,0 +1,270 @@
+{
+  "id": "ff5edafa-d389-4df3-b4da-f329a5693863",
+  "name": "BookRoomWithTitleIntent",
+  "auto": true,
+  "contexts": [
+    "AskEndTimeIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "AskEndTimeIntent.AskEndTimeIntent-yes",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0dedbe9b-160d-40ab-b32c-5fb01fb77ff6",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "title",
+          "value": "$title",
+          "prompts": [
+            "Welchen Titel soll der Termin haben?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1540543565,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "9a853c12-e4d1-486f-b818-bf3fd2934f71",
+      "data": [
+        {
+          "text": "Durchsprache",
+          "alias": "title",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "65f8afa5-6c37-4c6b-8493-ccd19934210f",
+      "data": [
+        {
+          "text": "Scrum Workshop",
+          "alias": "title",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537441077,
+      "isAuto": false
+    },
+    {
+      "id": "bf23e8ee-7f3a-4ff0-9da8-c25e02516c34",
+      "data": [
+        {
+          "text": "genau"
+        }
+      ],
+      "isTemplate": false,
+      "count": 2,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "2034ef6a-f01c-4eb8-8094-bc4db8ab4741",
+      "data": [
+        {
+          "text": "ja"
+        }
+      ],
+      "isTemplate": false,
+      "count": 2,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "7a43a0c4-2308-46e3-ac11-ae86d4d0e0ac",
+      "data": [
+        {
+          "text": "Vorstellungsgespräch",
+          "alias": "title",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "9931ff4d-d915-4346-91ba-885363136a84",
+      "data": [
+        {
+          "text": "ist mir egal"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "7e4b0263-7c34-48b4-a0e2-e14f8648199a",
+      "data": [
+        {
+          "text": "Ja das wäre schön"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537441077,
+      "isAuto": false
+    },
+    {
+      "id": "91c153e0-5c6e-40e0-91a1-6d516b8c2e88",
+      "data": [
+        {
+          "text": "klingt gut"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "6e3541d5-e237-4a3d-a908-c38544f9c769",
+      "data": [
+        {
+          "text": "klar"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "679f3e86-1b70-4db2-8113-0a83c756c078",
+      "data": [
+        {
+          "text": "Besprechung",
+          "alias": "title",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "4a60d1d5-20e4-44ee-b3a2-86deee23c5bf",
+      "data": [
+        {
+          "text": "mach das"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "bdc0a710-3f90-46ad-83cc-fbae80934122",
+      "data": [
+        {
+          "text": "Interview mit Max Meier",
+          "alias": "title",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "5bc2a1f8-384a-4be1-ac25-0f8b89da7f2a",
+      "data": [
+        {
+          "text": "natürlich"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "282f7ac4-e1c8-401c-b38e-6a14587d252e",
+      "data": [
+        {
+          "text": "bestätigen"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "c61f3b66-465b-4872-90b2-05e698deba14",
+      "data": [
+        {
+          "text": "Retrospektive",
+          "alias": "title",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537441077,
+      "isAuto": false
+    },
+    {
+      "id": "5bc550f5-c152-4077-aec6-1c16e227c81c",
+      "data": [
+        {
+          "text": "das ist richtig"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1537259680,
+      "isAuto": false
+    },
+    {
+      "id": "088e3f46-5df6-4c55-828d-528c3efb0f29",
+      "data": [
+        {
+          "text": "einverstanden"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1497436128,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

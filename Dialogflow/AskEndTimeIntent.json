@@ -1,0 +1,621 @@
+{
+  "id": "44411489-6ef8-43be-b7ca-a5ad5fdf0491",
+  "name": "AskEndTimeIntent",
+  "auto": true,
+  "contexts": [
+    "room-free"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "69164f33-ce9a-4756-bd05-b5fa04356acd",
+          "required": false,
+          "dataType": "@sys.time",
+          "name": "endtime",
+          "value": "$endtime",
+          "prompts": [],
+          "isList": false
+        },
+        {
+          "id": "a4b1997b-5414-4791-b34f-39012a0acf2c",
+          "required": false,
+          "dataType": "@sys.duration",
+          "name": "duration",
+          "value": "$duration",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1538490463,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "801fa09c-25e3-47d1-be9d-6015e6644712",
+      "data": [
+        {
+          "text": "drei Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536919532,
+      "isAuto": false
+    },
+    {
+      "id": "4da31ddd-3d04-49b6-9292-21a279b7d07f",
+      "data": [
+        {
+          "text": "3,5 Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538490463,
+      "isAuto": false
+    },
+    {
+      "id": "157f7b2a-5dd7-41cd-a8c9-3c18a6e29a8b",
+      "data": [
+        {
+          "text": "23",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259378,
+      "isAuto": false
+    },
+    {
+      "id": "e77c3b4b-b942-4d56-aa25-f6576825d177",
+      "data": [
+        {
+          "text": "bis "
+        },
+        {
+          "text": "18:00 Uhr",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259378,
+      "isAuto": false
+    },
+    {
+      "id": "faf9c736-0b29-4281-9d66-e4af5c29408c",
+      "data": [
+        {
+          "text": "Eine Stunde",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536919265,
+      "isAuto": false
+    },
+    {
+      "id": "7ac918c5-fa64-4024-8e96-80f491200385",
+      "data": [
+        {
+          "text": "4,5 Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538490463,
+      "isAuto": false
+    },
+    {
+      "id": "e7e675e3-87b6-40a0-8229-685579dedeb3",
+      "data": [
+        {
+          "text": "14 Uhr",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536919532,
+      "isAuto": false
+    },
+    {
+      "id": "c42bca86-f60f-43c2-9e80-f22bcd66219f",
+      "data": [
+        {
+          "text": "17 Uhr",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536912326,
+      "isAuto": false
+    },
+    {
+      "id": "5ecc98ba-ffa6-4a15-b525-50052d6d87c7",
+      "data": [
+        {
+          "text": "bis "
+        },
+        {
+          "text": "11:00 Uhr",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536912207,
+      "isAuto": false
+    },
+    {
+      "id": "cf16d9ac-9a26-493f-825b-9f1c5883e80b",
+      "data": [
+        {
+          "text": "6 Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538489991,
+      "isAuto": false
+    },
+    {
+      "id": "8daedb48-7a30-4ca1-ac16-1f6f040e8452",
+      "data": [
+        {
+          "text": "3 Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1538488671,
+      "isAuto": false
+    },
+    {
+      "id": "5fdc5ff9-335d-4d93-8e8f-b0dbc07041e7",
+      "data": [
+        {
+          "text": "1 Stunde 30 Minuten",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538488671,
+      "isAuto": false
+    },
+    {
+      "id": "1983ba38-ba7b-4921-91d4-04818e181f0a",
+      "data": [
+        {
+          "text": "0,5 Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538490463,
+      "isAuto": false
+    },
+    {
+      "id": "d3cf4338-7377-440c-9afa-da5cac9d40e6",
+      "data": [
+        {
+          "text": "14",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259378,
+      "isAuto": false
+    },
+    {
+      "id": "d12eb8a4-dc9e-4d90-9518-a5fc5636908f",
+      "data": [
+        {
+          "text": "zwei Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536919412,
+      "isAuto": false
+    },
+    {
+      "id": "347625ae-a597-48e1-9543-ed4feb641549",
+      "data": [
+        {
+          "text": "bis "
+        },
+        {
+          "text": "23 Uhr",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537431747,
+      "isAuto": false
+    },
+    {
+      "id": "9399f936-7eec-4caf-ac40-e21aeb8450a2",
+      "data": [
+        {
+          "text": "4 Stunden 30 Minuten",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538488671,
+      "isAuto": false
+    },
+    {
+      "id": "5e76eea5-0725-45db-aae3-b2e8192b41c3",
+      "data": [
+        {
+          "text": "12 uhr",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537259378,
+      "isAuto": false
+    },
+    {
+      "id": "30c85665-f71f-41a4-88af-51c1d2a3f294",
+      "data": [
+        {
+          "text": "1 Stunde 30 min",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536919265,
+      "isAuto": false
+    },
+    {
+      "id": "0ba8d527-7d57-492e-ab18-d57858ebcbef",
+      "data": [
+        {
+          "text": "10 Uhr 30",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536912326,
+      "isAuto": false
+    },
+    {
+      "id": "c82d05b2-58c3-45f0-bdd9-b5e622058162",
+      "data": [
+        {
+          "text": "1,5 Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538490463,
+      "isAuto": false
+    },
+    {
+      "id": "cc93a7b4-3bac-417f-8a8c-a219b01b743a",
+      "data": [
+        {
+          "text": "1 Stunde und 30 Minuten",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538489991,
+      "isAuto": false
+    },
+    {
+      "id": "0c3b12b8-d69e-4914-b423-4d2f4f227da5",
+      "data": [
+        {
+          "text": "30 Minuten",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 2,
+      "updated": 1536919412,
+      "isAuto": false
+    },
+    {
+      "id": "e9befc69-5272-4555-9538-085558a2bd29",
+      "data": [
+        {
+          "text": "1h",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536919412,
+      "isAuto": false
+    },
+    {
+      "id": "31ec6486-5293-4a4f-8466-dde183544396",
+      "data": [
+        {
+          "text": "2 Stunden 30 Minuten",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538488671,
+      "isAuto": false
+    },
+    {
+      "id": "3156987b-e4db-48d5-b25f-89eeeb2c9494",
+      "data": [
+        {
+          "text": "3 Stunden 30 Minuten",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538488671,
+      "isAuto": false
+    },
+    {
+      "id": "9829c90b-9d9a-4368-bd3e-26335db4fbe7",
+      "data": [
+        {
+          "text": "2 Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1536919412,
+      "isAuto": false
+    },
+    {
+      "id": "ee14b590-037d-4028-a8fd-862a16769b69",
+      "data": [
+        {
+          "text": "2,5 Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538490463,
+      "isAuto": false
+    },
+    {
+      "id": "e1a4bcda-ffe5-4f57-b7f3-aea4bcb640a0",
+      "data": [
+        {
+          "text": "30 min",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536919532,
+      "isAuto": false
+    },
+    {
+      "id": "1183b181-ef63-4f90-9160-a1ea970437f4",
+      "data": [
+        {
+          "text": "2 Stunden und 30 Minuten",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1538489991,
+      "isAuto": false
+    },
+    {
+      "id": "99ddfb01-fe5f-44ab-a2d0-a466db1c6480",
+      "data": [
+        {
+          "text": "1 Stunde",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1537438048,
+      "isAuto": false
+    },
+    {
+      "id": "928bb2cf-162b-41c6-8698-049e7a217245",
+      "data": [
+        {
+          "text": "12:30 Uhr",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536919412,
+      "isAuto": false
+    },
+    {
+      "id": "ad3a2bbb-8a80-4d54-89cc-93e8f0699695",
+      "data": [
+        {
+          "text": "13:00 Uhr",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536912207,
+      "isAuto": false
+    },
+    {
+      "id": "f51d6d55-1f39-4250-8df1-2a7c7801b198",
+      "data": [
+        {
+          "text": "3 Std",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1536919412,
+      "isAuto": false
+    },
+    {
+      "id": "10ef8bd0-e584-4824-b4ef-3b849cae9d0c",
+      "data": [
+        {
+          "text": "5 Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538488671,
+      "isAuto": false
+    },
+    {
+      "id": "b1f38c21-1065-4978-ab9d-02b91d4f8b8b",
+      "data": [
+        {
+          "text": "4 Stunden",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1538488671,
+      "isAuto": false
+    },
+    {
+      "id": "0b49bdb6-bc8c-417b-88f0-947b7f4edeec",
+      "data": [
+        {
+          "text": "18 Uhr 30",
+          "alias": "endtime",
+          "meta": "@sys.time",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1536919532,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

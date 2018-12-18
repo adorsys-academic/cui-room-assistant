@@ -1,0 +1,106 @@
+{
+  "id": "a6daaa5c-4de0-40fa-949f-c99c190b9f52",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1537615506,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "d1eb3ec2-0c10-46ef-ab30-f5525c5afb48",
+      "data": [
+        {
+          "text": "Hallo"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1529584125,
+      "isAuto": false
+    },
+    {
+      "id": "042a3621-af62-40c9-9b4b-2b6939dc17c4",
+      "data": [
+        {
+          "text": "Hey"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529584125,
+      "isAuto": false
+    },
+    {
+      "id": "73c6511f-4472-4048-a78a-d27a19606e2a",
+      "data": [
+        {
+          "text": "Guten Tag"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529584125,
+      "isAuto": false
+    },
+    {
+      "id": "3ad2f113-fa09-41ab-92da-d4d27a33ec99",
+      "data": [
+        {
+          "text": "Hi"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529584125,
+      "isAuto": false
+    },
+    {
+      "id": "f2c713ee-b9e7-47b3-a0fe-65367a1dfb0d",
+      "data": [
+        {
+          "text": "Grüß Gott"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1529584125,
+      "isAuto": false
+    },
+    {
+      "id": "0760cc9c-f04e-4449-8979-4d204f84c2ed",
+      "data": [
+        {
+          "text": "Servus"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1529584125,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

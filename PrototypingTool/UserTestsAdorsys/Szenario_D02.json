@@ -1,0 +1,312 @@
+{
+    "version": "0.1",
+    "creator": "cui-prt",
+    "format": "cpd-prt",
+    "projectName": "User Tests at adorsys - Szenario D01",
+    "persona": "NA",
+    "modality": "multi",
+    "languageCode": "de",
+    "scenarios": [{
+        "name": "SzenarioD01",
+        "intents": [{
+                "name": "helpIntent",
+                "utterances": [
+                    "Hilfe",
+                    "Hilf mir",
+                    "Was kann ich fragen",
+                    "Ich bin verwirrt",
+                    "Ich weiß nicht weiter"
+                ],
+                "responses": [{
+                    "subject": "Help",
+                    "phrase": "Ich bin dein persönlicher Raumbuchungs-Assistent. Ich helfe dir gerne dabei, einen Besprechungsraum für deine Termine zu finden und zu buchen.",
+                    "type": "textmessage"
+                }]
+            },
+            {
+                "name": "errorIntent",
+                "utterances": [
+                    "Hilfe",
+                    "Hilf mir",
+                    "Was kann ich fragen",
+                    "Ich bin verwirrt",
+                    "Ich weiß nicht weiter"
+                ],
+                "responses": [{
+                    "subject": "Error",
+                    "phrase": "Entschuldigung, das muss ich noch lernen.",
+                    "type": "textmessage"
+                }]
+            },
+            {
+                "name": "AdditionalPhrases",
+                "priority": {
+                    "aux": 0
+                },
+                "utterances": [
+                    "Einige zusätzliche und hilfreiche Phrases"
+                ],
+                "responses": [{
+                    "subject": "askForBooking",
+                    "phrase": "<TESTERNAME:40> Wann möchtest du den Raum buchen?",
+                    "type": "textmessage"
+                  },
+                  {
+                    "subject": "askForBookingDay",
+                    "phrase": "An welchem Tag möchtest du den Raum buchen?",
+                    "type": "textmessage"
+                  },
+                  {
+                    "subject": "askForBookingTime",
+                    "phrase": "<TESTERNAME:40> Zu welcher Uhrzeit möchtest du den Raum buchen?",
+                    "type": "textmessage"
+                  }
+                ]
+            },
+            {
+                "name": "RoomsNowIntent",
+                "priority": {
+                    "main": 0
+                },
+                "utterances": [
+                    "Welche Räume sind jetzt sofort frei?",
+                    "Welche Räume sind um 14:00 Uhr frei?"
+                ],
+                "responses": [{
+                        "subject": "SliderDuration",
+                        "phrase": "<TESTERNAME:40> Wie lange soll der Termin gehen?",
+                        "type": "regulator",
+                        "tags": [
+                            "time",
+                            "duration"
+                        ],
+                        "followUp": {
+                            "command": "discard"
+                        },
+                        "payload": [{
+                            "start": 14.0,
+                            "duration": 5.0,
+                            "room": "R3",
+                            "dateRelative": "heute",
+                            "dateAbsolute": "09.10.2018",
+                            "dayOfWeek": "Di"
+                        }]
+                    },
+                    {
+                        "subject": "OnlyR3Textmessage",
+                        "phrase": "<TESTERNAME:40> Zu diesem Zeitpunkt ist nur der R3 verfügbar",
+                        "type": "textmessage"
+                    },
+                    {
+                        "subject": "OnlyR3DetailView",
+                        "phrase": "<TESTERNAME:40> Zu diesem Zeitpunkt ist nur der R3 verfügbar",
+                        "type": "details",
+                        "tags": [
+                            "booking"
+                        ],
+                        "followUp": {
+                            "command": "discard"
+                        },
+                        "payload": [{
+                            "room": "R3",
+                            "layout": "overview",
+                            "visible": "other",
+                            "calendar": {
+                                "startingHour": 13,
+                                "isInteractive": false,
+                                "slots": [{
+                                        "start": 14.0,
+                                        "duration": 1.0,
+                                        "col": 0,
+                                        "typeOfTitle": "dateRelative",
+                                        "dateRelative": "heute",
+                                        "dateAbsolute": "09.10.2018",
+                                        "dayOfWeek": "Di"
+                                    }
+                                ]
+                            }
+                        }]
+                    }
+                ]
+            },
+            {
+                "name": "RoomsFromNowIntent",
+                "priority": {
+                    "main": 0
+                },
+                "utterances": [
+                    "Welche Räume sind ab jetzt frei?",
+                    "Welche Räume sind ab 14:00 Uhr frei?"
+                ],
+                "responses": [{
+                        "subject": "CalendarViewFreeSlots",
+                        "phrase": "Hier die freien Zeiträume für einige Räume ab 14:00 Uhr",
+                        "hint": "Wähle einen Zeitraum, um mit dem Buchen fortzufahren.",
+                        "type": "calendar",
+                        "tags": [
+                            "columns"
+                        ],
+                        "followUp": {
+                            "command": "discard"
+                        },
+                        "payload": {
+                            "layout": "short",
+                            "startingHour": 13.0,
+                            "slots": [{
+                                    "start": 15.0,
+                                    "duration": 3.0,
+                                    "col": 0,
+                                    "typeOfTitle": "room",
+                                    "room": "R2",
+                                    "dateRelative": "heute",
+                                    "dateAbsolute": "09.10.2018",
+                                    "dayOfWeek": "Di"
+                                },
+                                {
+                                    "start": 14.5,
+                                    "duration": 1.5,
+                                    "col": 1,
+                                    "typeOfTitle": "room",
+                                    "room": "R4",
+                                    "dateRelative": "heute",
+                                    "dateAbsolute": "09.10.2018",
+                                    "dayOfWeek": "Di"
+                                },
+                                {
+                                    "start": 16.5,
+                                    "duration": 1.5,
+                                    "col": 1,
+                                    "typeOfTitle": "room",
+                                    "room": "R4",
+                                    "dateRelative": "heute",
+                                    "dateAbsolute": "09.10.2018",
+                                    "dayOfWeek": "Di"
+                                },
+                                {
+                                    "start": 14,
+                                    "duration": 2.0,
+                                    "col": 2,
+                                    "typeOfTitle": "room",
+                                    "room": "R3",
+                                    "dateRelative": "heute",
+                                    "dateAbsolute": "09.10.2018",
+                                    "dayOfWeek": "Di"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "subject": "SliderStartDuration",
+                        "phrase": "<TESTERNAME:40> Ab wann und für wie lange möchtest \nDu heute den Raum R3 reservieren?",
+                        "type": "regulator",
+                        "tags": [
+                            "time",
+                            "start",
+                            "duration"
+                        ],
+                        "followUp": {
+                            "command": "discard"
+                        },
+                        "payload": {
+                            "start": 14.0,
+                            "duration": 2.0,
+                            "col": 0,
+                            "typeOfTitle": "room",
+                            "room": "R3",
+                            "dateRelative": "heute",
+                            "dateAbsolute": "09.10.2018",
+                            "dayOfWeek": "Di"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "CompleteBookingIntent",
+                "priority": {
+                    "main": 0
+                },
+                "utterances": [
+                    "Nutzer hat alle Angaben abgeschlossen",
+                    "Ggf. Hinzufügen von Title und Abschluss der Buchung"
+                ],
+                "responses": [{
+                        "subject": "AskIfTitle",
+                        "phrase": "<TESTERNAME:40> Möchtest du dem Termin einen Titel hinzufügen?",
+                        "type": "confirmation",
+                        "tags": [
+                            "booking"
+                        ],
+                        "followUp": {
+                            "command": "discard"
+                        }
+                    },
+                    {
+                        "subject": "ConfirmBookingRequest",
+                        "phrase": "<TESTERNAME:40> Soll ich für heute, Dienstag 09.10.18 \nden Raum R3 von 14 bis 15 Uhr für Dich buchen?",
+                        "type": "confirmation",
+                        "tags": [
+                            "booking"
+                        ],
+                        "payload": [{
+                            "start": 14.0,
+                            "duration": 1.0,
+                            "col": 0,
+                            "title": "Meeting für <TESTERNAME:100>",
+                            "typeOfTitle": "room",
+                            "room": "R3",
+                            "dateRelative": "heute",
+                            "dateAbsolute": "09.10.2018",
+                            "dayOfWeek": "Di"
+                        }]
+                    },
+                    {
+                        "subject": "CancelBooking",
+                        "phrase": "<TESTERNAME:40> Ich habe deine Buchung verworfen. Wie kann ich dir sonst noch helfen?",
+                        "type": "textmessage"
+                    },
+                    {
+                        "subject": "BookingSuccessFull",
+                        "phrase": "<TESTERNAME:40> Ich habe den Raum R3 für Dich gebucht. \nHier, Deine Bestätigung",
+                        "type": "textmessage"
+                    },
+                    {
+                        "subject": "ShowCertificate",
+                        "phrase": "Zeige Buchungsbestätigung",
+                        "type": "certificate",
+                        "tags": [
+                            "booking"
+                        ],
+                        "payload": [{
+                            "start": 14.0,
+                            "duration": 1.0,
+                            "col": 0,
+                            "title": "Meeting für <TESTERNAME:100>",
+                            "typeOfTitle": "room",
+                            "room": "R3",
+                            "dateRelative": "heute",
+                            "dateAbsolute": "09.10.2018",
+                            "dayOfWeek": "Di"
+                        }]
+                    },
+                    {
+                        "subject": "ShowRoomOnMap",
+                        "phrase": "<TESTERNAME:40> Hier, der Lageplan der Besprechungsräume.",
+                        "hint": "Ich habe für Dich den Raum R3 farbig markiert",
+                        "type": "map",
+                        "tags": [
+                            "rooms"
+                        ],
+                        "payload": [
+                            "R3"
+                        ]
+                    },
+                    {
+                        "subject": "PleasureMessage",
+                        "phrase": "<TESTERNAME:40> Das habe ich gerne für dich gemacht.",
+                        "type": "textmessage"
+                    }
+                ]
+            }
+        ]
+    }]
+}

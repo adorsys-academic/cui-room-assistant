@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Activities.ChatActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddd"
+        android:paddingTop="10dp"
+        android:paddingBottom="50dp"
+        android:clipToPadding="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="2dp"
+            android:layout_toStartOf="@+id/chat_send_msg"
+            android:layout_centerVertical="true"
+            >
+            <EditText
+                android:id="@+id/chat_input_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#fff"
+                android:hint="Type a Message"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/chat_send_msg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@android:drawable/ic_menu_send"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            android:elevation="4dp"
+            android:layout_centerInParent="true"
+            >
+        </Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>

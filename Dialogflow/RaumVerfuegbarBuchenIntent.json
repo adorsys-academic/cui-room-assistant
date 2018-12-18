@@ -1,0 +1,168 @@
+{
+  "id": "e72b14a6-a682-4afc-a402-7c4490eb57a4",
+  "parentId": "4ee013a2-7647-4152-9555-519b6c0de9d1",
+  "rootParentId": "4ee013a2-7647-4152-9555-519b6c0de9d1",
+  "name": "RaumVerfuegbarBuchenIntent",
+  "auto": true,
+  "contexts": [
+    "RaumVerfuegbarIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "RaumVerfuegbarIntent.RaumVerfuegbarIntent-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1540543950,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "db9061c2-66c3-4b1d-8af2-ba00444c3904",
+      "data": [
+        {
+          "text": "bestätigen",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1497436128,
+      "isAuto": false
+    },
+    {
+      "id": "a7409abf-3aee-41d1-9e0c-8f4affe17779",
+      "data": [
+        {
+          "text": "das ist richtig",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1497436128,
+      "isAuto": false
+    },
+    {
+      "id": "febbffdc-3974-4000-aec1-82babeffe736",
+      "data": [
+        {
+          "text": "genau",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 2,
+      "updated": 1497436128,
+      "isAuto": false
+    },
+    {
+      "id": "c31181fa-d099-4ec4-9d6f-135b81ed2ac2",
+      "data": [
+        {
+          "text": "mach das",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1497436128,
+      "isAuto": false
+    },
+    {
+      "id": "7b331e67-7e46-4fff-89d9-645d5dd9a580",
+      "data": [
+        {
+          "text": "ja",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 2,
+      "updated": 1497436128,
+      "isAuto": false
+    },
+    {
+      "id": "bb50e701-e609-46fb-9c61-720d9dda45b1",
+      "data": [
+        {
+          "text": "klingt gut",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1497436128,
+      "isAuto": false
+    },
+    {
+      "id": "2ed767a5-dc55-4f93-8a5c-ef5e9b9592b3",
+      "data": [
+        {
+          "text": "natürlich",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1497436128,
+      "isAuto": false
+    },
+    {
+      "id": "19a51798-0100-4c8e-8f74-c2d5468b248e",
+      "data": [
+        {
+          "text": "ist mir egal",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1497436128,
+      "isAuto": false
+    },
+    {
+      "id": "474d2edf-5ece-4a1a-b748-8e658dd29025",
+      "data": [
+        {
+          "text": "einverstanden",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1497436128,
+      "isAuto": false
+    },
+    {
+      "id": "3908f951-8174-40d2-bf45-ecc4e906c21e",
+      "data": [
+        {
+          "text": "klar",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1497436128,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

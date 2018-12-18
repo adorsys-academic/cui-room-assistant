@@ -1,0 +1,188 @@
+{
+  "id": "0ff15ff6-202b-478d-9ab2-e0068eda4f09",
+  "name": "DiscardBookingIntent",
+  "auto": true,
+  "contexts": [
+    "confirm-booking"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Ich habe deine Buchung verworfen. Wie kann ich dir sonst noch helfen?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1540538529,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "a23b323a-d0bf-4d4b-8aa0-10c05c64af4e",
+      "data": [
+        {
+          "text": "eigentlich nicht"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "5bef1c88-3f81-498e-9a83-ec93c848940b",
+      "data": [
+        {
+          "text": "mach das nicht"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "ed06e24f-b15b-476f-b014-ef91348a8def",
+      "data": [
+        {
+          "text": "kein Interesse"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "6befdcd0-a1b3-4d8e-8d6c-c73f0cc7bd8c",
+      "data": [
+        {
+          "text": "Nein lieber nicht"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "04b7b6f6-72e7-4b32-b7b0-884a322ab351",
+      "data": [
+        {
+          "text": "Halt stop"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "5258a5aa-a339-4b10-890c-221cb701b2f5",
+      "data": [
+        {
+          "text": "Zurück"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "4a231de4-e43d-49df-892c-c9c3a215335c",
+      "data": [
+        {
+          "text": "Fehler"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "1dbe990f-095b-4453-a2c2-c2dd72e24030",
+      "data": [
+        {
+          "text": "Nicht "
+        },
+        {
+          "text": "buchen",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "63aa9476-c302-4687-8309-46cef8290cc9",
+      "data": [
+        {
+          "text": "Stop"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "8763a06e-7ee0-4099-8a61-e65ace37c7e9",
+      "data": [
+        {
+          "text": "Auf keinen Fall"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "756ae342-462c-4404-a3b1-62515750ec8f",
+      "data": [
+        {
+          "text": "Nein danke"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    },
+    {
+      "id": "f12358a5-a767-4fea-9895-e1bc064e6c08",
+      "data": [
+        {
+          "text": "Nein"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538502,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

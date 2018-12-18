@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bespoken-tools": "^1.2.10",
+    "date-and-time": "^0.6.2",
+    "express": "^4.16.3",
+    "google-id-token-verifier": "^0.2.3",
+    "googleapis": "^27.0.0",
+    "moment": "^2.22.1",
+    "mongodb": "^3.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "poststart": "bst proxy http 8080"
+  },
+  "author": "",
+  "license": "ISC"
+}

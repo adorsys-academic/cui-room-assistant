@@ -1,0 +1,140 @@
+{
+  "id": "56512936-8c98-42d2-baf5-a638aa8ff521",
+  "name": "AcceptBookingIntent",
+  "auto": true,
+  "contexts": [
+    "confirm-booking"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1540538272,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "a71cca23-6943-4dbc-8276-5c20591f7b31",
+      "data": [
+        {
+          "text": "Ja klar"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538272,
+      "isAuto": false
+    },
+    {
+      "id": "0e63d26c-6e54-48fc-9454-ca7a455bfaae",
+      "data": [
+        {
+          "text": "Ja gerne"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538272,
+      "isAuto": false
+    },
+    {
+      "id": "7d90f9da-f331-4d09-a034-e3e60faca5e3",
+      "data": [
+        {
+          "text": "Ja "
+        },
+        {
+          "text": "buchen",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538272,
+      "isAuto": false
+    },
+    {
+      "id": "d953a604-2eb8-4e39-8962-a7a35cd48a7d",
+      "data": [
+        {
+          "text": "Einverstanden"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538272,
+      "isAuto": false
+    },
+    {
+      "id": "c225e2e3-6552-4519-b200-5b48d72e1f9b",
+      "data": [
+        {
+          "text": "Mach das"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538138,
+      "isAuto": false
+    },
+    {
+      "id": "f0a5452d-3fd6-48bf-873f-d5c2f22c88d9",
+      "data": [
+        {
+          "text": "Ja bitte"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538138,
+      "isAuto": false
+    },
+    {
+      "id": "b82e86cd-3ee0-4a92-ba9a-0b142d737f27",
+      "data": [
+        {
+          "text": "Klar"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538138,
+      "isAuto": false
+    },
+    {
+      "id": "5813d3da-4495-4ba2-8c6d-3e780d25d384",
+      "data": [
+        {
+          "text": "Ja"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1540538138,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

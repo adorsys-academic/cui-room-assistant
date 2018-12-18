@@ -1,0 +1,153 @@
+{
+  "id": "689b141f-c2e0-43e8-8bda-ea970a97d5f7",
+  "name": "BookRoomWithoutTitleIntent",
+  "auto": true,
+  "contexts": [
+    "AskEndTimeIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "AskEndTimeIntent.AskEndTimeIntent-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1540543536,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "38cc66aa-24c8-4470-a915-cdc2137cd78b",
+      "data": [
+        {
+          "text": "das möchte ich nicht",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1497436126,
+      "isAuto": false
+    },
+    {
+      "id": "49c53b68-5e0d-4f84-8d51-7a455679ec9e",
+      "data": [
+        {
+          "text": "nein",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 4,
+      "updated": 1497436126,
+      "isAuto": false
+    },
+    {
+      "id": "dbca2bff-32fa-40c3-9f65-5d61f3992ebe",
+      "data": [
+        {
+          "text": "auf keinen Fall",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1497519195,
+      "isAuto": false
+    },
+    {
+      "id": "9e7debf5-56bb-4aaa-8443-80cf665a4e38",
+      "data": [
+        {
+          "text": "nein danke",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1497436126,
+      "isAuto": false
+    },
+    {
+      "id": "e4982a74-40ef-4439-a0dd-1d09edfaed43",
+      "data": [
+        {
+          "text": "eigentlich nicht",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1497436126,
+      "isAuto": false
+    },
+    {
+      "id": "2fd8acf9-4e03-4f7b-8cb9-f00ce4975e64",
+      "data": [
+        {
+          "text": "ich denke nicht",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1497436126,
+      "isAuto": false
+    },
+    {
+      "id": "55a5ebb9-b811-4b57-97f3-ccbafcf5f7eb",
+      "data": [
+        {
+          "text": "mach das nicht",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1497436126,
+      "isAuto": false
+    },
+    {
+      "id": "4f452441-ccd2-49ac-9ada-a1834909c88d",
+      "data": [
+        {
+          "text": "kein Interesse",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1497519195,
+      "isAuto": false
+    },
+    {
+      "id": "a5140635-53fc-4105-8e8b-48d7deb62e8a",
+      "data": [
+        {
+          "text": "ich bin nicht einverstanden",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1497436126,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}
